@@ -1,12 +1,13 @@
 # from typing_extensions import Counter
+import sys
 
-book_dir = "books/frankenstein.txt"
+# book_dir = "#"books/frankenstein.txt"
 counted_let_list = []
 lettercount = []
 
 
 def _get_book_text():
-    with open(book_dir) as f:
+    with open(sys.argv[1]) as f:
         book = f.read()
         return book
 
